@@ -1,0 +1,9 @@
+From python:3
+ENV PYTHONUNBUFFERED=1
+WORKDIR /code
+COPY requirments.txt /code/
+RUN apt update
+RUN apt install python3.9
+RUN pip install -r requirments.txt
+COPY . /code/
+EXPOSE 8080

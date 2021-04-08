@@ -1,0 +1,6 @@
+__pycache__/app.cpython-38.pyc
+.vscode/settings.json
+prometheus/datasource.yml
+prometheus/dockerfile
+grafana/
+data/grafana

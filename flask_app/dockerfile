@@ -1,0 +1,11 @@
+FROM python:3
+ENV PYTHONUNBUFFERED=1
+COPY . /flask_app
+WORKDIR /flask_app
+COPY requirments.txt /flask_app/
+RUN pip install -r requirments.txt
+RUN pip install gunicorn
+ENV FLASK_APP /flask_app/app.py
+
+CMD gunicorn --bind 0.0.0.0:8080 run:api
+EXPOSE 8080
