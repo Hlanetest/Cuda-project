@@ -4,6 +4,7 @@ from flask import Flask
 from flask import jsonify
 from prometheus_flask_exporter import PrometheusMetrics
 
+
 logging.basicConfig(level=logging.INFO)
 logging.info("Setting LOGLEVEL to INFO")
 
