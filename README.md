@@ -10,6 +10,7 @@ It’s important to note that this will be using Docker as a way to host & manag
 
 Basic Setup:
 if you simply wish for a list of commands here's what we've used
+**Command List**
 ```
 git clone https://github.com/Hlanetest/Cuda-project.git
 cd Cuda-project
@@ -18,7 +19,7 @@ docker-compose up -d
 Username: admin
 Password: MYPASS123
 ```
-url endpoint list:
+**url endpoint list:**
 ```
 http://172.16.238.10:8080/simple
 http://172.16.238.10:8080/metrics
