@@ -23,8 +23,9 @@ Password: MYPASS123
 ```
 http://172.16.238.10:8080/simple
 http://172.16.238.10:8080/metrics
+http://172.16.238.11:9999/metrics
+http://172.16.238.11:9999
 http://172.16.238.12:3000
-http://172.16.238.11:9090
 ```
 First thing we need is to ensure Docker/Docker-compose are installed & ready to go. 
 If you’re unfamiliar please follow the links to setup docker & docker-compose:
