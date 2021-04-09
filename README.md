@@ -9,6 +9,17 @@ It’s important to note that this will be using Docker as a way to host & manag
 
 
 Basic Setup:
+if you simply wish for a list of commands here's what we've used
+```
+git clone https://github.com/Hlanetest/Cuda-project.git
+cd Cuda-project
+docker-compose up -d
+http://172.16.238.10:8080/simple
+http://172.16.238.12:3000
+Username: admin
+Password: MYPASS123
+
+
 First thing we need is to ensure Docker/Docker-compose are installed & ready to go. 
 If you’re unfamiliar please follow the links to setup docker & docker-compose:
 Windows:
@@ -23,9 +34,10 @@ https://docs.docker.com/compose/install/
 After docker installation:
 Now we move on to the configuration & setup.
 In the elevated powershell, Run the following command:
+
 **git clone https://github.com/Hlanetest/Cuda-project.git**
 Once it’s cloned, run 
-**Cd Cuda-project**
+**cd Cuda-project**
 Once inside run:
 **docker-compose up -d**
 This above command will tell docker-compose to use the file in our Current working directory, it’ll start pulling all the structure we need. This will run for a few moments and once it completes you should be returned to your normal screen
