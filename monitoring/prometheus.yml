@@ -17,7 +17,7 @@ scrape_configs:
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
-      - targets: ['prometheus-test:9090']
+      - targets: ['prometheus-test:9999']
 
   - job_name: 'flask_api'
     tls_config:

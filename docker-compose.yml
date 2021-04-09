@@ -22,12 +22,12 @@ services:
     restart: unless-stopped
     container_name: prometheus-test
     ports:
-      - "9090:9090"
+      - "9999:9999"
     volumes:
       - ./monitoring/:/etc/prometheus/
     command:
       - '--config.file=/etc/prometheus/prometheus.yml' 
-      - '--log.level=debug'
+      - '--web.listen-address=:9999'
     networks:
       example-network:
         ipv4_address: 172.16.238.11
