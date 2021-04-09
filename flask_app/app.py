@@ -14,10 +14,11 @@ metrics = PrometheusMetrics(api)
 metrics.info(
     "app_info", "Just an App", version="1.0.0")
 
+
 @api.route("/simple/")
 def hello():
     return jsonify(say_hello())
 
+
 def say_hello():
     return {"message": "hello"}
-
