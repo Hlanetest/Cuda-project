@@ -23,20 +23,20 @@ https://docs.docker.com/compose/install/
 After docker installation:
 Now we move on to the configuration & setup.
 In the elevated powershell, Run the following command:
-git clone https://github.com/Hlanetest/Cuda-project.git 
+**git clone https://github.com/Hlanetest/Cuda-project.git**
 Once it’s cloned, run 
-Cd Cuda-project
+**Cd Cuda-project**
 Once inside run:
-docker-compose up -d
+**docker-compose up -d**
 This above command will tell docker-compose to use the file in our Current working directory, it’ll start pulling all the structure we need. This will run for a few moments and once it completes you should be returned to your normal screen
 
 Once completed go to the following address
-172.16.238.10:8080/simple
+http://172.16.238.10:8080/simple
 Refresh the page about 5 five times, then go to:
-172.16.238.12:3000
+http://172.16.238.12:3000
 Once there enter the following credentials
-Username: admin
-Password: MYPASS123
+Username: **admin**
+Password: **MYPASS123**
 
 Click Login and once inside click the four blocks right above the compass, and click ‘Manage’
 From manage you should see an ‘example Dashboard’ click that and you should see your request data being pipped through, alongside the CPU & memory data. 
