@@ -14,12 +14,17 @@ if you simply wish for a list of commands here's what we've used
 git clone https://github.com/Hlanetest/Cuda-project.git
 cd Cuda-project
 docker-compose up -d
-http://172.16.238.10:8080/simple
-http://172.16.238.12:3000
+
 Username: admin
 Password: MYPASS123
 ```
-
+url endpoint list:
+```
+http://172.16.238.10:8080/simple
+http://172.16.238.10:8080/metrics
+http://172.16.238.12:3000
+http://172.16.238.10:9090
+```
 First thing we need is to ensure Docker/Docker-compose are installed & ready to go. 
 If you’re unfamiliar please follow the links to setup docker & docker-compose:
 Windows:
@@ -63,3 +68,5 @@ Password: **MYPASS123**
 
 Click Login and once inside click the four blocks right above the compass, and click ‘Manage’
 From manage you should see an ‘example Dashboard’ click that and you should see your request data being pipped through, alongside the CPU & memory data. 
+
+And now from here everything is set, the tracker is running, grafana is up and prometheus is scrapping the metrics!
